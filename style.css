@@ -14,6 +14,7 @@
     --font-color: rgb(163, 218, 178);
     --color: rgb(240, 255, 244);
     --hover: rgb(10, 59, 10);
+    --bgcolor: rgb(12, 40, 18);
 }
 
 .container_header{
@@ -22,15 +23,14 @@
     background-color: var(--hcolor);
     align-items: center;
     padding: 10px;
-    color: var(--hover);
+    color: rgb(5, 102, 5);
 }
 
 .pagina {
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    color: var(--hover);
-    font-size: large;
+    font-size: larger;
     font-weight: bolder;
 }
 #titulo {
@@ -50,7 +50,7 @@ justify-content: space-evenly;
 
 
 main{
-    background-color: rgb(25, 66, 33);
+    background-color: var(--bgcolor);
 }
  
 p, #contato{
@@ -64,22 +64,13 @@ p, #contato{
     display: flex;
     justify-content: center;
     align-items: center;
-    }
 
-#img {
-    padding: 80px 200px;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
-}
+    }
 
 #home_texto{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    padding: 12vh;
+    padding-left: 150px;
     }
 
 h4{
@@ -92,11 +83,20 @@ span {
     color: var(--font-color);
 }
 
+#imagem {
+    padding: 80px 200px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #contato {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-top: 15px;
 }
 
 form {
