@@ -10,7 +10,7 @@
 }
 
 :root {
-    --hcolor: #bbcc66;
+    --hcolor: #b6b64b;
     --font-color: rgb(163, 218, 178);
     --color: rgb(240, 255, 244);
     --hover: rgb(10, 59, 10);
@@ -23,7 +23,7 @@
     background-color: var(--hcolor);
     align-items: center;
     padding: 10px;
-    color: rgb(5, 102, 5);
+    color: rgb(3, 90, 3);
 }
 
 .pagina {
@@ -35,7 +35,7 @@
 }
 #titulo {
     margin-left: 120px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 ul li {
@@ -67,6 +67,10 @@ p, #contato{
 
     }
 
+#image {
+    opacity: .9;
+}
+
 #home_texto{
     display: flex;
     flex-direction: column;
@@ -89,6 +93,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: .8;
 }
 
 #contato {
