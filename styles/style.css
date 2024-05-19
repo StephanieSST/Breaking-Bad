@@ -28,10 +28,11 @@
 
 .pagina {
     display: flex;
-    justify-content:space-evenly;
-    align-items: center;
+    flex-flow: row;
+    justify-content: center;
     font-size: larger;
     font-weight: bolder;
+    padding-right: 80px;
 }
 #titulo {
     margin-left: 120px;
@@ -39,17 +40,11 @@
 }
 
 ul li {
-margin-left: 5px;
-margin-right: 50px;
+display: inline;
+padding-right: 50px;
 }
 
-/* .evenly{
-display: flex;
-justify-content: space-evenly;
-} */
-
-
-main{
+.bg{
     background-color: var(--bgcolor);
 }
  
@@ -59,22 +54,24 @@ p, #contato{
 }
 
 #home{
-    padding: 30px 90px;
+    padding: 30px 50px 50px 100px;
     height: 90vh;
     display: flex;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
 
     }
 
-#image {
+.image {
+    border-radius: 15%;
     opacity: .9;
 }
 
 #home_texto{
     display: flex;
     flex-direction: column;
-    padding-left: 150px;
+    padding-left: 125px;
     }
 
 h4{
@@ -96,6 +93,10 @@ span {
     opacity: .8;
 }
 
+.img {
+    border-radius: 20%;
+}
+
 #contato {
     display: flex;
     align-items: center;
@@ -114,7 +115,7 @@ form input, textarea{
     border-radius: 15px;
     padding-bottom: 15px;
     background-color: var(--color);
-    width:  380px;
+    width: 380px;
     color: var(--hover);
     font-weight: 700;
 }
@@ -154,5 +155,21 @@ footer p{
     background-color: var(--hcolor);
     color: var(--hover);
     font-weight: bold;
-    padding: 5px;
+}
+
+.size {
+    font-size: 15px;
+}
+
+
+.video {
+    background-color: var(--bgcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 200px 80px;
+}
+
+iframe {
+    border-radius: 50px;
 }

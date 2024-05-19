@@ -41,10 +41,10 @@
        
 </header>
 
-    <main>
+    <main class="bg">
         <section id="home">
 
-             <img id="image" src="assets/img/transferir.jpeg" width="600" height="500" alt="Imagem da Série">
+             <img class="image" src="assets/img/transferir.jpeg" width="600" height="500" alt="Imagem da Série">
        
             <article id="home_texto">
                 <h4>Breaking Bad: A História em 1 Vídeo!</h4><br>
@@ -62,7 +62,7 @@
         </section>
 
         <div id="imagem">
-            <img src="assets/img/Breaking-Bad-Header.avif" width="1500" height="500" alt="Imagem do logo da série">
+            <img class="img" src="assets/img/Breaking-Bad-Header.avif" width="1050" height="425" alt="Imagem do logo da série">
         </div>
 
         <section id="contato">
@@ -71,19 +71,23 @@
             <form action="" method="post">
                 
                 <label for="nome"><strong>Nome:</strong></label>
-                <input id="nome" type="text" name="nome" placeholder="Digite seu nome:" required><br>
+                <input id="nome" type="text" placeholder="Digite seu nome:" onkeyup="validaNome()" required>
+                <div class="size" id="txtNome"></div>
 
                 <label for="email"><strong>Email:</strong></label>
-                <input id="email" type="email" name="email" placeholder="Email:" required><br>
+                <input id="email" type="email" placeholder="Email:" onkeyup="validaEmail()" required>
+                <div class="size" id="txtEmail"></div>
 
                 <label for="subject"><strong>Assunto:</strong></label>
-                <input id="subject" type="text" name="subject" placeholder="Assunto:"><br>
+                <input id="subject" type="text" name="subject" placeholder="Assunto:">
 
                 <label for="message"><strong>Mensagem:</strong></label>
-                <textarea id="message" name="message" placeholder="Mensagem:" required></textarea>
+                <textarea id="message" name="message" placeholder="Mensagem:" cols="40" rows="5" onkeyup="validaMensagem()" required></textarea>
+                <div class="size" id="txtMessage"></div>
 
+                <div id="enviarForm"></div>
             </form>
-            <button type="submit"></button><br>
+            <button onclick="enviar()"></button><br>
 
         </section>
     </main>
@@ -92,5 +96,7 @@
         <p><a href="https://github.com/StephanieSST" target="_blank"><img src="assets/img/GitHub-Logo.svg" alt="Logo do Github"></a></p>   
         <p>❤ Feito por Stephanie!</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
