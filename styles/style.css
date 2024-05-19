@@ -134,7 +134,7 @@ a:hover{
 
 button {
     border-radius: 3rem;
-    background-image: url("/assets/img/button.webp");
+    background-image: url("./assets/img/button.webp");
     width: 50px;
     align-items: center;
     height: 50px;
